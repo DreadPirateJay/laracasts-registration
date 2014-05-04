@@ -28,8 +28,6 @@ class RegistrationController extends \BaseController {
 	 */
 	public function create()
 	{
-		if (Auth::check()) return Redirect::home();
-		
 		return View::make('registration.create');
 	}
 
